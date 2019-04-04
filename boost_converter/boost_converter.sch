@@ -413,7 +413,7 @@ F 1 "N Channel" V 8050 3350 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 7950 3475 50  0001 L CIN
 F 3 "https://www.infineon.com/dgdl/Infineon-BSS214NW-DS-v02_02-en.pdf?fileId=db3a30431b3e89eb011b695aebc01bde" H 7750 3550 50  0001 L CNN
 	1    7750 3550
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 Wire Wire Line
 	7550 3450 7350 3450
@@ -781,7 +781,7 @@ Wire Notes Line
 	1450 3200 1050 3200
 Wire Notes Line
 	1050 3200 1050 4300
-Text Notes 900  3100 0    50   ~ 0
+Text Notes 950  3100 0    50   ~ 0
 Power connectors\n
 Wire Wire Line
 	7200 4900 7200 5300
@@ -789,17 +789,17 @@ Text Label 7000 5000 0    50   ~ 0
 OPT
 Wire Wire Line
 	6950 5000 7000 5000
-Text Label 6500 2350 0    50   ~ 0
+Text Label 7200 2350 0    50   ~ 0
 OPT
 $Comp
 L power:GND #PWR?
 U 1 1 5CA907A4
-P 6300 2750
-F 0 "#PWR?" H 6300 2500 50  0001 C CNN
-F 1 "GND" H 6305 2577 50  0000 C CNN
-F 2 "" H 6300 2750 50  0001 C CNN
-F 3 "" H 6300 2750 50  0001 C CNN
-	1    6300 2750
+P 7000 2750
+F 0 "#PWR?" H 7000 2500 50  0001 C CNN
+F 1 "GND" H 7005 2577 50  0000 C CNN
+F 2 "" H 7000 2750 50  0001 C CNN
+F 3 "" H 7000 2750 50  0001 C CNN
+	1    7000 2750
 	1    0    0    -1  
 $EndComp
 Text Label 5900 3550 0    50   ~ 0
@@ -808,48 +808,48 @@ Wire Wire Line
 	5850 3750 5850 3550
 Wire Wire Line
 	5850 3550 5900 3550
-Text Label 6200 1900 2    50   ~ 0
+Text Label 6900 1900 2    50   ~ 0
 VCC
 $Comp
 L Device:R R?
 U 1 1 5CA94C86
-P 6300 2100
-F 0 "R?" H 6370 2146 50  0000 L CNN
-F 1 "R" H 6370 2055 50  0000 L CNN
-F 2 "" V 6230 2100 50  0001 C CNN
-F 3 "~" H 6300 2100 50  0001 C CNN
-	1    6300 2100
+P 7000 2100
+F 0 "R?" H 7070 2146 50  0000 L CNN
+F 1 "R" H 7070 2055 50  0000 L CNN
+F 2 "" V 6930 2100 50  0001 C CNN
+F 3 "~" H 7000 2100 50  0001 C CNN
+	1    7000 2100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5CA987EA
-P 6300 2550
-F 0 "R?" H 6370 2596 50  0000 L CNN
-F 1 "R" H 6370 2505 50  0000 L CNN
-F 2 "" V 6230 2550 50  0001 C CNN
-F 3 "~" H 6300 2550 50  0001 C CNN
-	1    6300 2550
+P 7000 2550
+F 0 "R?" H 7070 2596 50  0000 L CNN
+F 1 "R" H 7070 2505 50  0000 L CNN
+F 2 "" V 6930 2550 50  0001 C CNN
+F 3 "~" H 7000 2550 50  0001 C CNN
+	1    7000 2550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6300 2750 6300 2700
+	7000 2750 7000 2700
 Wire Wire Line
-	6300 2400 6300 2350
+	7000 2400 7000 2350
 Wire Wire Line
-	6500 2350 6300 2350
-Connection ~ 6300 2350
+	7200 2350 7000 2350
+Connection ~ 7000 2350
 Wire Wire Line
-	6300 2350 6300 2250
+	7000 2350 7000 2250
 Wire Wire Line
-	6200 1900 6300 1900
+	6900 1900 7000 1900
 Wire Wire Line
-	6300 1900 6300 1950
+	7000 1900 7000 1950
 Wire Notes Line
-	7200 1750 7200 3000
+	7900 1750 7900 3000
 Wire Notes Line
-	4450 3000 4450 1750
-Text Notes 6000 1700 0    50   ~ 0
+	5150 3000 5150 1750
+Text Notes 6700 1700 0    50   ~ 0
 Master 1 / Master 2 switch\n
 Wire Wire Line
 	4550 4750 5550 4750
@@ -858,7 +858,7 @@ SYNCIN
 Wire Wire Line
 	4850 4850 4950 4850
 Connection ~ 4950 4850
-Text Label 4950 2350 2    50   ~ 0
+Text Label 5650 2350 2    50   ~ 0
 CLOCK
 Wire Wire Line
 	4950 4850 5550 4850
@@ -866,47 +866,47 @@ Text Label 5500 4950 2    50   ~ 0
 SYNCOUT
 Wire Wire Line
 	5500 4950 5550 4950
-Text Label 5250 1900 0    50   ~ 0
+Text Label 5950 1900 0    50   ~ 0
 SYNCIN
-Text Label 5250 2900 0    50   ~ 0
+Text Label 5950 2900 0    50   ~ 0
 SYNCOUT
 $Comp
 L Device:R R?
 U 1 1 5CAD84E3
-P 5150 2100
-F 0 "R?" H 5220 2146 50  0000 L CNN
-F 1 "R" H 5220 2055 50  0000 L CNN
-F 2 "" V 5080 2100 50  0001 C CNN
-F 3 "~" H 5150 2100 50  0001 C CNN
-	1    5150 2100
+P 5850 2100
+F 0 "R?" H 5920 2146 50  0000 L CNN
+F 1 "R" H 5920 2055 50  0000 L CNN
+F 2 "" V 5780 2100 50  0001 C CNN
+F 3 "~" H 5850 2100 50  0001 C CNN
+	1    5850 2100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5CAD8BE8
-P 5150 2600
-F 0 "R?" H 5220 2646 50  0000 L CNN
-F 1 "R" H 5220 2555 50  0000 L CNN
-F 2 "" V 5080 2600 50  0001 C CNN
-F 3 "~" H 5150 2600 50  0001 C CNN
-	1    5150 2600
+P 5850 2600
+F 0 "R?" H 5920 2646 50  0000 L CNN
+F 1 "R" H 5920 2555 50  0000 L CNN
+F 2 "" V 5780 2600 50  0001 C CNN
+F 3 "~" H 5850 2600 50  0001 C CNN
+	1    5850 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4950 2350 5150 2350
+	5650 2350 5850 2350
 Wire Wire Line
-	5150 2350 5150 2250
+	5850 2350 5850 2250
 Wire Wire Line
-	5150 2450 5150 2350
-Connection ~ 5150 2350
+	5850 2450 5850 2350
+Connection ~ 5850 2350
 Wire Wire Line
-	5250 1900 5150 1900
+	5950 1900 5850 1900
 Wire Wire Line
-	5150 1900 5150 1950
+	5850 1900 5850 1950
 Wire Wire Line
-	5250 2900 5150 2900
+	5950 2900 5850 2900
 Wire Wire Line
-	5150 2900 5150 2750
+	5850 2900 5850 2750
 Wire Wire Line
 	4400 4650 4400 4500
 Wire Wire Line
@@ -967,25 +967,25 @@ Wire Notes Line
 	5150 5250 5150 4800
 Wire Notes Line
 	5150 4800 4850 4800
-Text Notes 5350 2600 0    50   ~ 0
+Text Notes 6050 2600 0    50   ~ 0
 Only Master 1\n
-Text Notes 6500 2600 0    50   ~ 0
+Text Notes 7200 2600 0    50   ~ 0
 Only Master 1\n
 Wire Notes Line
-	4450 3000 7200 3000
+	5150 3000 7900 3000
 Wire Notes Line
-	4450 1750 7200 1750
-Text Notes 6500 2150 0    50   ~ 0
+	5150 1750 7900 1750
+Text Notes 7200 2150 0    50   ~ 0
 Only Master 2\n
-Text Notes 5350 2150 0    50   ~ 0
+Text Notes 6050 2150 0    50   ~ 0
 Only Master 2\n
-Text Notes 1200 1850 0    50   ~ 0
-Master 1 - generates SYNC signal (OPT is GND, timing resistor is present)
-Text Notes 1200 1950 0    50   ~ 0
+Text Notes 1550 1850 0    50   ~ 0
+Master 1 - generates SYNC signal with 180° shift (OPT is GND, timing resistor is present)
+Text Notes 1550 1950 0    50   ~ 0
 Master 2 - follows SYNC signal (OPT is VCC, timing resistor is omitted)
-Text Notes 1200 2100 0    50   ~ 0
+Text Notes 1550 2100 0    50   ~ 0
 more information can be found in LM5122's datasheet:
-Text Notes 1200 2200 0    50   ~ 0
+Text Notes 1550 2200 0    50   ~ 0
 http://www.ti.com/lit/ds/snvs954h/snvs954h.pdf\n
 Wire Wire Line
 	9700 3450 10150 3450
@@ -1018,4 +1018,6 @@ Wire Wire Line
 Connection ~ 10150 3450
 Wire Wire Line
 	10150 3450 10500 3450
+Text Notes 1900 2850 2    50   ~ 0
+Connected to the Switch board
 $EndSCHEMATC
